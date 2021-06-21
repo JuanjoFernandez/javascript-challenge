@@ -7,3 +7,4 @@ This project consists on creating a dynamic webpage that will pull data related 
 # Project breakdown
 
 - To start I will create the general layout of the webpage using HTML, CSS and [Bootstrap](https://getbootstrap.com/)
+- Now, by using Javascript the app will pull the data provided about UFO sightings in order to be able to work with it
