@@ -8,3 +8,4 @@ This project consists on creating a dynamic webpage that will pull data related 
 
 - To start I will create the general layout of the webpage using HTML, CSS and [Bootstrap](https://getbootstrap.com/)
 - Now, by using Javascript the app will pull the data provided about UFO sightings in order to be able to work with it
+- Next I created a function that takes a variable date, uses that date to filter the data and displays the results in the webpage
