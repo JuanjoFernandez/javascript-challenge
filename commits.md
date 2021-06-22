@@ -4,3 +4,4 @@
 - Adds filter box
 - Adds some css styling
 - Adds filtering function
+    - [] Weird characters in comments, needs debugging
