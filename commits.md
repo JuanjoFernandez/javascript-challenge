@@ -13,3 +13,4 @@
 ## 06/23/2021
 - Fills table upon page loading
 - Adds event listener
+- Filters table
