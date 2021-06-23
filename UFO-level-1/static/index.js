@@ -14,30 +14,37 @@ data.forEach(function (tableFill) {
   })
 })
 
+// Listener for button
+var dateFilter = d3.select('#filterDate').value;
+var buttonFilter = d3.select('#filterButton');
+buttonFilter.on("click", filterClick);
+
 // Function to run upon user input
 function filterClick() {
-  d3.event.preventDefault();
   console.log("Filter button clicked");
-  var dateFilter = d3.select("#dateFilter").value
-  data.forEach(filterData(dateFilter));
+  
+  var dateElement = d3.select("#dateFilter");
+  var dateFilter = dateElement.property("value");
+  console.log(`Date filter: ${dateFilter}`);
+  
+  // data.forEach(filterData(dateFilter));
 }
 
-// Function that filters, decided to not make it in line to be ready for part 2
-function filterData(event) {
-tbody.html("");
+// // Function that filters, decided to not make it in line to be ready for part 2
+// function filterData(event) {
+//   d3.event.preventDefault();
+//   tbody.html("");
 
-  // Filtering by Date
-  if (dateFilter === event.datetime) {
+//   // Filtering by Date
+//   if (dateFilter === event.datetime) {
 
-    // Appending results
-    var row = tbody.append("tr");
-    Object.entries(event).forEach(([key, value]) => {
-      var cell = row.append("td");
-      cell.text(value);
-    })
-  }
-}
+//     // Appending results
+//     var row = tbody.append("tr");
+//     Object.entries(event).forEach(([key, value]) => {
+//       var cell = row.append("td");
+//       cell.text(value);
+//     })
+//   }
+// }
 
-// Listener for button
-var buttonFilter = d3.select("#filterButton");
-buttonFilter.on("click", filterClick);
+
