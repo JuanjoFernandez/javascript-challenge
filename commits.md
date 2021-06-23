@@ -9,3 +9,6 @@
 ## 06/22/2021
 - Adds filter button
 - Computes date range
+
+## 06/23/2021
+- Fills table upon page loading
