@@ -14,3 +14,4 @@
 - Fills table upon page loading
 - Adds event listener
 - Filters table
+- Formats index.html
