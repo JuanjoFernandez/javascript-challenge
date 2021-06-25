@@ -15,3 +15,6 @@
 - Adds event listener
 - Filters table
 - Formats index.html
+
+## 06/24/2021
+- Adds styling to table
