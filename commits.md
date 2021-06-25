@@ -18,3 +18,4 @@
 
 ## 06/24/2021
 - Adds styling to table
+- Apllies final table style

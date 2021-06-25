@@ -26,29 +26,29 @@
         <!-- Main content -->
         <div class="row">
             <!-- Filters column -->
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h3 id="h3">Filter by:</h3>
 
                 <!-- Filter by Date -->
                 <br>
-                <label for="byDate" id="filterDate">Date (copy a date from the table):</label><br>
+                <label for="byDate" id="filterText">Date (copy a date from the table):</label><br>
                 <input type="text" id="dateFilter" name="byDate" minlength="10" maxlength="10" size="10">
 
                 <!-- Filter button -->
                 <br><br><button type="button" class="btn btn-outline-light" id="filterButton">Filter!!</button>
 
             </div>
-            <div class="col-md-9">
+            <div class="col-md-10">
                 <table class="table table-strip" id="table-style">
                     <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>Country</th>
-                            <th>Shape</th>
-                            <th>Duration</th>
-                            <th>Comments</th>
+                            <th class="tableheader">Date</th>
+                            <th class="tableheader">City</th>
+                            <th class="tableheader">State</th>
+                            <th class="tableheader">Country</th>
+                            <th class="tableheader">Shape</th>
+                            <th class="tableheader">Duration</th>
+                            <th class="tableheader">Comments</th>
                         </tr>
                     </thead>
                     <tbody></tbody>

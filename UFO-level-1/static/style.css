@@ -1,12 +1,19 @@
 #h3 {
-    color: lightgrey;
+    color: lightblue;
     text-align: center;
 }
 
 #filterText {
-    color: cyan;
+    color: lightblue;
 }
 
 #table-style {
     color: gray;
+    border-color: cyan;
+    border-bottom-width: 10px;
+}
+
+.tableheader {
+    color: cyan;
+    text-align: left;
 }
