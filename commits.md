@@ -19,3 +19,6 @@
 ## 06/24/2021
 - Adds styling to table
 - Apllies final table style
+
+## 06/26/2021
+- Creates files for part 2
