@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The truth is out there, UFO sightins</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body style="background-color: black;">
+    <!-- Main container -->
+
+    <div class="container-fluid">
+        <!-- Top row, banner and animated text -->
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/id4.jpg" style="max-width:100%;">
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="row">
+            <!-- Filters column -->
+            <div class="col-md-2">
+                <h3 id="h3">Filter by:</h3>
+
+                <!-- Filter by Date -->
+                <br>
+                <label for="byDate" id="filterText">Date (copy a date from the table):</label><br>
+                <input type="text" id="dateFilter" name="byDate" minlength="10" maxlength="10" size="10">
+
+                <!-- Filter button -->
+                <br><br><button type="button" class="btn btn-outline-light" id="filterButton">Filter!!</button>
+
+            </div>
+            <div class="col-md-10">
+                <table class="table table-strip" id="table-style">
+                    <thead>
+                        <tr>
+                            <th class="tableheader">Date</th>
+                            <th class="tableheader">City</th>
+                            <th class="tableheader">State</th>
+                            <th class="tableheader">Country</th>
+                            <th class="tableheader">Shape</th>
+                            <th class="tableheader">Duration</th>
+                            <th class="tableheader">Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript scripts footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="static/data.js"></script>
+    <script src="static\index.js"></script>
+</body>
+
+</html>
