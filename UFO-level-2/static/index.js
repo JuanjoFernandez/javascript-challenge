@@ -57,14 +57,22 @@ function filterClick() {
   if (dateValue !== null) {
     filteredData = filteredData.filter(filterDate);
   }
-  
-  
-  var filteredData = data.filter(filterData);
-  console.log(filteredData);
+  if (cityValue !== null) {
+    filteredData = filteredData.filter(filterCity);
+  }
+  if (stateValue !== null) {
+    filteredData = filteredData.filter(filterState);
+  }
+  if (countryValue !== null) {
+    filteredData = filteredData.filter(filterCountry);
+  }
+  if (shapeValue !== null) {
+    filteredData = filteredData.filter(filterShape);
+  }
 
   // Appending results
   filteredData.forEach(function (tableFill) {
-    // Appending results
+    // Filling the table
     var row = tbody.append("tr");
     Object.entries(tableFill).forEach(([key, value]) => {
       var cell = row.append("td");
