@@ -103,5 +103,6 @@ stateInput.on("change", filterClick);
 countryInput.on("change", filterClick);
 shapeInput.on("change", filterClick);
 
-// Listener for button
+// Listener and event for button
 var buttonFilter = d3.select('#filterButton');
+buttonFilter.on("click", filterClick);
