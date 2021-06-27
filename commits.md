@@ -30,3 +30,4 @@
 - Fixes input text length
 - Fixes broken button
 - Updates readme
+- Merges branch part2
