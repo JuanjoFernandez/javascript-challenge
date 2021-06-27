@@ -29,3 +29,4 @@
 - Fixes conditional logic
 - Fixes input text length
 - Fixes broken button
+- Updates readme
