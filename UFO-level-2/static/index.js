@@ -16,7 +16,7 @@ data.forEach(function (tableFill) {
 
 // Function to run upon user input
 function filterClick() {
-  
+
   // Working with a copy of the data
   filteredData = data
 
@@ -36,10 +36,29 @@ function filterClick() {
   d3.event.preventDefault();
   tbody.html("");
 
-  // Filtering function
-  function filterData(data) {
-    return data.datetime === dateValue;
+  // Filtering functions
+  function filterDate(filteredData) {
+    return filteredData.datetime === dateValue;
   }
+  function filterCity(filteredData) {
+    return filteredData.city === cityValue;
+  }
+  function filterState(filteredData) {
+    return filteredData.state === stateValue;
+  }
+  function filterCountry(filteredData) {
+    return filteredData.country === countryValue;
+  }
+  function filterShape(filteredData) {
+    return filteredData.shape === shapeValue;
+  }
+
+  // Conditionals to run each function
+  if (dateValue !== null) {
+    filteredData = filteredData.filter(filterDate);
+  }
+  
+  
   var filteredData = data.filter(filterData);
   console.log(filteredData);
 
@@ -56,10 +75,10 @@ function filterClick() {
 
 // Listeners for inputs
 var dateInput = d3.select('#dateFilter');
-var cityInput=d3.select('#cityFilter');
-var stateInput=d3.select('#stateFilter');
-var countryInput=d3.select('#countryFilter');
-var shapeInput =d3.select('#shapeFilter');
+var cityInput = d3.select('#cityFilter');
+var stateInput = d3.select('#stateFilter');
+var countryInput = d3.select('#countryFilter');
+var shapeInput = d3.select('#shapeFilter');
 
 // Events for inputs
 dateInput.on("change", filterClick);
