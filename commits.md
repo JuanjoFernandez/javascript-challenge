@@ -27,3 +27,4 @@
 - Adds filtering functions
 - Adds conditionals for filtering
 - Fixes conditional logic
+- Fixes input text length
