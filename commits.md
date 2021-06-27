@@ -22,3 +22,4 @@
 
 ## 06/26/2021
 - Creates files for part 2
+- Adds inputs for all filters
