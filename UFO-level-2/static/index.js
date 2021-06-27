@@ -33,6 +33,14 @@ function filterClick() {
   var countryValue = countryElement.property("value");
   var shapeValue = shapeElement.property("value");
 
+  // Printing out the filters used
+  console.log("The filters used are:");
+  console.log(`date/time: ${dateValue}`);
+  console.log(`city: ${cityValue}`);
+  console.log(`state: ${stateValue}`);
+  console.log(`country: ${countryValue}`);
+  console.log(`shape: ${shapeValue}`);
+
   d3.event.preventDefault();
   tbody.html("");
 
@@ -54,19 +62,19 @@ function filterClick() {
   }
 
   // Conditionals to run each function
-  if (dateValue !== null) {
+  if (dateValue !== '') {
     filteredData = filteredData.filter(filterDate);
   }
-  if (cityValue !== null) {
+  if (cityValue !== '') {
     filteredData = filteredData.filter(filterCity);
   }
-  if (stateValue !== null) {
+  if (stateValue !== '') {
     filteredData = filteredData.filter(filterState);
   }
-  if (countryValue !== null) {
+  if (countryValue !== '') {
     filteredData = filteredData.filter(filterCountry);
   }
-  if (shapeValue !== null) {
+  if (shapeValue !== '') {
     filteredData = filteredData.filter(filterShape);
   }
 

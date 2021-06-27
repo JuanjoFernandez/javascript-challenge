@@ -4,7 +4,8 @@
 - Adds filter box
 - Adds some css styling
 - Adds filtering function
-    - [] Weird characters in comments, needs debugging
+    - [X] Weird characters in comments, needs debugging
+        - Dataset actually contains those characters, no need to debug
 
 ## 06/22/2021
 - Adds filter button
@@ -24,3 +25,5 @@
 - Creates files for part 2
 - Adds inputs for all filters
 - Adds filtering functions
+- Adds conditionals for filtering
+- Fixes conditional logic
