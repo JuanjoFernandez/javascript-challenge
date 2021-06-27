@@ -1,3 +1,6 @@
+![header](UFO-level-1/images/id4.jpg)
+# **JavaScript-challenge Commits history**
+
 ## 06/21/2021
 - Creates file structure
 - Adds general layout to index.html
@@ -31,3 +34,4 @@
 - Fixes broken button
 - Updates readme
 - Merges branch part2
+- Updates commit history format
